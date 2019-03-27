@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos/games.css">
+    <meta charset = "utf-8">
+    <title> Hello World </title>
+</head>
+<body>
+<div id="app" class="container intro">
+
+    <div v-if="player == 'guest'" class="form-inline" >
+        <div class="form-group">
+            <label for="email" class="bg-success">Email address:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd" class="bg-success">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <button  class="btn btn-primary btn-lg" id="Login" onclick= "login()">Login</button>
+        <input type="checkbox" onchange="toggleSignInForm()">Register
+        <button class="btn btn-primary btn-lg" id="SignIn" onclick= "signIn()">Sign In</button>
+
+            <select id="team">
+                <option value="none">Select a Team</option>
+                <option value="SAN_LORENZO">San Lorenzo</option>
+                <option value="HURACAN">Huracan</option>
+            </select>
+
+    </div>
+    <div v-else  class="form-group" >
+        <button  class="btn btn-primary btn-lg" id="byeBye" onclick= "logout()">Logout</button>
+    </div>
+
+
+<h1 class="text-center bg-warning text-dark">List of Games </h1> <button v-if="player != 'guest'" class="btn btn-primary btn-lg "  onclick="newGame()">New Game</button>
+<ul>
+    <li v-for="game in games" class="bg-warning text-center">{{game.id}} {{game.created}}
+        <ul>
+            <li v-for="gamePlayer in game.gamePlayers"> {{gamePlayer.player.id}} {{gamePlayer.player.email}} <a v-if="player != 'guest' && gamePlayer.player.id == player.id" :href="'/web/game.html?gp='+gamePlayer.id" class="btn btn-primary btn-lg" role="button">My Game</a>
+                <a v-if="player != 'guest' && gamePlayer.player.id != player.id && game.gamePlayers.length < 2" class="btn btn-primary btn-lg" role="button" :onclick="'joinGame('+game.id+')'">Join game</a>
+            </li>
+
+        </ul>
+    </li>
+
+</ul>
+
+<table class="table table-responsive table-striped table-dark">
+    <thead>
+    <tr>
+        <th>Players</th>
+        <th>Win</th>
+        <th>Ties</th>
+        <th>Lost</th>
+        <th>Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr v-for="score in scores">
+        <td>{{score.email}}</td>
+        <td>{{score.win}}</td>
+        <td>{{score.ties}}</td>
+        <td>{{score.lost}}</td>
+        <td>{{score.pts}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="script/games.js"></script>
+</body>
+</html>

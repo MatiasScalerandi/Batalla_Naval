@@ -1,0 +1,175 @@
+.grid-stack-item-content {
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
+.carrierHorizontal{
+    background-image: url('submarinehor.png');
+    background-size: contain;
+}
+
+.carrierHorizontalRed{
+    background-image: url('submarinehor_red.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.patroalHorizontal{
+    background-image: url('patrolboathor.png');
+    background-size: contain;
+}
+
+
+.patroalHorizontalRed{
+    background-image: url('patrolboathor_red.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+
+.grid-ships{
+    border: solid black;
+    height: 450px;
+    width: 450px;
+    background-image: url('cuadricula.png');
+    background-size: 100% 100%;
+    padding-top: 42px;
+    padding-left: 42px;
+}
+
+.BARRA_BRAVA_SL_H{
+    background-image: url('butteler_h.jpg');
+    background-size: 100% 100%;
+
+}
+.BARRA_BRAVA_SL_V{
+    background-image: url('butteler_v.jpg');
+     background-size: 100% 100%;
+}
+.GORDO_SL_H{
+background-image: url('gordo_ventilador_h.jpg');
+    background-size: cover;
+}
+.GORDO_SL_V{
+background-image: url('gordo_ventilador_v.jpg');
+      background-size: 100% 100%;
+     width: 45px !important;
+}
+.AUTO1_SL_H{
+background-image: url('auto_SanLorenzo_h.jpg');
+    background-size: cover;
+}
+.AUTO1_SL_V{
+background-image: url('auto_SanLorenzo_v.jpg');
+     background-size: 100% 100%;
+    width: 45px !important;
+}
+.AUTO2_SL_H{
+background-image: url('auto_SanLorenzo_h.jpg');
+    background-size: cover;
+}
+.AUTO2_SL_V{
+background-image: url('auto_SanLorenzo_v.jpg');
+     background-size: 100% 100%;
+    width: 45px !important;
+}
+.MICRO_SL_H{
+background-image: url('microSL_h.jpg');
+    background-size: cover;
+}
+.MICRO_SL_V{
+background-image: url('microSL_v.jpg');
+      background-size: 100% 100%;
+     width: 45px !important;
+}
+
+.piedrazo{
+background-image: url('piedrazo.png');
+    background-size: cover;
+}
+
+.vidrio{
+background-image: url('piedrazoAdentro.jpg');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.vidrioShoot{
+background-image: url('piedrazoAdentro.jpg');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.fondo_game{
+    background-image: url('batalla_naval.jpg');
+
+       background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.fondo_gameNotConteiner{
+    background-image: url('batalla_naval.png');
+
+       background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BARRA_BRAVA_HU_H{
+    background-image: url('banda_quema_h.jpg');
+    background-size: 100% 100%;
+
+}
+.BARRA_BRAVA_HU_V{
+    background-image: url('banda_quema_v.jpg');
+     background-size: 100% 100%;
+}
+.GORDO_HU_H{
+background-image: url('gordo_huracan_h.png');
+    background-size: cover;
+}
+.GORDO_HU_V{
+background-image: url('gordo_huracan_v.png');
+      background-size: 100% 100%;
+     width: 45px !important;
+}
+.AUTO1_HU_H{
+background-image: url('auto_huracan_h.jpg');
+    background-size: cover;
+}
+.AUTO1_HU_V{
+background-image: url('auto_huracan_v.jpg');
+     background-size: 100% 100%;
+    width: 45px !important;
+}
+.AUTO2_HU_H{
+background-image: url('auto_huracan_h.jpg');
+    background-size: cover;
+}
+.AUTO2_HU_V{
+background-image: url('auto_huracan_v.jpg');
+     background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.MICRO_HU_H{
+background-image: url('micro_huracan_h.png');
+    background-size: cover;
+}
+.MICRO_HU_V{
+background-image: url('micro_huracan_v.png');
+      background-size: 100% 100%;
+     width: 45px !important;
+}
+.tiraPiedra{
+                background-image: url('tirapiedra.jpg');
+                    background-size: contain;
+
+
+}

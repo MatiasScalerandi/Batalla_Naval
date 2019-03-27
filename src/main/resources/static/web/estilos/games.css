@@ -1,0 +1,11 @@
+#team, #SignIn{
+    display: none;
+}
+
+.intro{
+    background-image: url('intro.jpg');
+
+       background-repeat: no-repeat;
+    background-size: cover;
+
+}
